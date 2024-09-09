@@ -3,32 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MSME Career</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Activities</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .accordion-item {
+            width: 50%;
+            margin: 10px auto;
+        }
+        .accordion-button img {
+            width: 100px; /* Adjust image size as needed */
+            height: auto;
+            display: block;
+            margin: 0 auto 10px; /* Center image and space below it */
+        }
+        .accordion-button .heading {
+            text-align: center; /* Center heading text */
+            margin: 0;
+        }
+        .accordion-button img.left {
+            order: -1; /* Image on left side for odd cards */
+        }
+        .accordion-button img.right {
+            order: 1; /* Image on right side for even cards */
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>MSME Career</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="schemes.html">Schemes</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="career.html">Career</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-            </ul>
-        </nav>
+    <header class="bg-white text-center py-3">
+        <h1 class="text-primary">Activities</h1>
     </header>
 
-    <section>
-        <h2>Career Opportunities</h2>
-        <p>Find the latest career opportunities in the MSME sector.</p>
-    </section>
-    
-    <footer>
-        <p>&copy; 2024 MSME. All Rights Reserved.</p>
-    </footer>
+    <div class="accordion" id="accordionExample">
+        <!-- Card 1 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <img src="images/image1.png" class="left" alt="Image 1">
+                    <div class="heading">Capacity Building and Skill Development</div>
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>Training Programs:</strong> Organizing workshops and training sessions on various aspects of business management, marketing, and technology.<br>
+                    <strong>Entrepreneurship Development:</strong> Providing resources and mentorship for budding entrepreneurs through incubators and accelerators.<br>
+                    <strong>Technical Skill Enhancement:</strong> Offering technical training and certifications to improve the skills of MSME employees.
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <img src="images/image2.png" class="right" alt="Image 2">
+                    <div class="heading">Support for Innovation and Startups</div>
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>Startup Hubs and Incubators:</strong> Facilities and support for new enterprises, including MSMEs.<br>
+                    <strong>Innovation Labs:</strong> Centers that provide resources and support for developing new products and services.
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <img src="images/image3.png" class="left" alt="Image 3">
+                    <div class="heading">Mentorship Programs</div>
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>Pairing:</strong> Connect new entrepreneurs with experienced mentors who can provide guidance and support.<br>
+                    <strong>Workshops:</strong> Conduct sessions on leadership, business strategy, and other key areas.
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <img src="images/image4.png" class="right" alt="Image 4">
+                    <div class="heading">Networking and Trade Shows</div>
+                </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>Industry Events and Trade Fairs:</strong> Opportunities for MSMEs to showcase their products and network with potential partners.<br>
+                    <strong>Business Forums and Conferences:</strong> Platforms for MSMEs to discuss challenges, share knowledge, and explore new opportunities.
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    <img src="images/image5.png" class="left" alt="Image 5">
+                    <div class="heading">Support for Rural and Underserved Areas</div>
+                </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>Rural MSME Development Programs:</strong> Initiatives aimed at promoting and supporting MSMEs in rural and remote areas.<br>
+                    <strong>Inclusive Growth Strategies:</strong> Programs designed to include underserved communities and regions in the MSME ecosystem.
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    <img src="images/image6.png" class="right" alt="Image 6">
+                    <div class="heading">Social Impact and Inclusion</div>
+                </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>Support for Women and Marginalized Groups:</strong> Offering targeted support for women entrepreneurs and marginalized communities through specific schemes and training programs.
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    <img src="images/image7.png" class="left" alt="Image 7">
+                    <div class="heading">Research and Policy Advocacy</div>
+                </button>
+            </h2>
+            <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>Policy Research:</strong> Studies and reports on MSME challenges and opportunities to inform policy decisions.
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                    <img src="images/image8.png" class="right" alt="Image 8">
+                    <div class="heading">Financial Support and Credit Facilities</div>
+                </button>
+            </h2>
+            <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>Loan Facilitation:</strong> Providing financial advisory services, helping MSMEs access loans, manage working capital, and create financial strategies.<br>
+                    <strong>SIDBI Assistance:</strong> The Small Industries Development Bank of India (SIDBI) offers various financial products and services to MSMEs.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9m0qD7Pz5U6Zw7zC6ZONv8dY2W77kU8KjC2H9OjD8NT+V61WzwWf" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-c5i8Krj9a0RY5B1iLTZk5PhR2e8MDP1XbA4Pbl7y4DQ9CoT5csQ4CRm7QU9gu95p" crossorigin="anonymous"></script>
 </body>
 </html>
