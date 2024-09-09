@@ -1,34 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MSME Skills</title>
+    <title>Schemes Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Custom CSS to alternate the layout and style the page */
+        .scheme-card {
+            width: 70%;
+            margin: 20px auto;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .scheme-card img {
+            width: 90%;
+            height: auto;
+            border-radius: 10px 10px 0 0;
+        }
+
+        /* Alternating background color */
+        .scheme-card:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+
+        .scheme-card:nth-child(odd) {
+            background-color: #fff;
+        }
+
+        .highlight {
+            background-color: #f0f8ff;
+            border: 2px solid #e69200;
+        }
+
+        .scheme-text {
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
-    <header>
-        <h1>MSME Skills</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="schemes.html">Schemes</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="career.html">Career</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-            </ul>
-        </nav>
+
+    <header class="bg-white text-center py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <img src="images/msme logo.jpeg" class="msme" alt="MSME Logo" style="width: 12%;">
+            <h1 class="text-primary">MSME - RESEARCH AND ANALYTIC FOUNDATION</h1>
+            <div>
+                <img src="images/Azadi.png" class="azadi mx-2" alt="Azadi Logo" style="width: 30%;">
+                <img src="images/g20-logo.png" class="g20 mx-2" alt="G20 Logo" style="width: 30%;">
+            </div>
+        </div>
     </header>
 
-    <section>
-        <h2>Skill Development Programs</h2>
-        <p>Information on skill development programs available for MSMEs.</p>
-    </section>
-    
-    <footer>
-        <p>&copy; 2024 MSME. All Rights Reserved.</p>
-    </footer>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">MSME</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">OBJECTIVES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="motto.html">MOTTO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="activities.html">ACTIVITIES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="scheme.html">SCHEME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">ABOUT US</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container my-5">
+        <h1 class="text-center mb-5 text-primary">Our Schemes</h1>
+
+        <!-- Scheme 1 -->
+        <div class="scheme-card border-warning" id="scheme1">
+            <img src="images/scheme1.png" class="img-fluid" alt="Scheme 1 Image">
+            <div class="scheme-text">
+                <h5 class="card-title"><strong> MSME ZED Certification (Zero Defect, Zero Effect)</h5><br> <br>
+                </strong> 
+                <p class="card-text">
+                    ZED is a comprehensive initiative by the Indian government to promote quality manufacturing and eco-friendly processes among Micro, Small, and Medium Enterprises (MSMEs). The certification encourages MSMEs to adopt best practices that ensure their products are of the highest quality
+                    ("Zero Defect") while minimizing their impact on the environment ("Zero Effect"). It aligns with the vision of making India a global manufacturing hub by helping MSMEs achieve world-class standards in
+                    production, sustainability, and competitiveness. <br> <br>
+
+                    ZED Certification offers multiple benefits to MSMEs. Firstly, it enhances their market credibility, allowing them to compete on a global stage by meeting international quality standards. Secondly, the
+                    certification enables MSMEs to optimize their processes, reduce wastage, and adopt energy-efficient methods, ultimately lowering operational costs. This also helps businesses transition to more sustainable, environmentally conscious operations, which is increasingly demanded by consumers and
+                    global trade partners. <br><br>
+
+                    Moreover, ZED-certified MSMEs enjoy various incentives such as easier access to credit, subsidies
+                    for certification, and priority in government tenders. These benefits not only reduce financial constraints but also foster innovation and capacity building within the sector. MSMEs also receive
+                    training and handholding support during the certification process, ensuring they can continually improve their operations and product quality. <br><br>
+
+                    By obtaining ZED Certification, MSMEs can unlock new opportunities for growth, contribute to India’s economic progress, and play a pivotal role in achieving the nation’s vision of becoming a global
+                    manufacturing leader. For businesses seeking long-term sustainability, competitiveness, and market leadership, ZED Certification is a powerful tool that fosters excellence and responsible growth.
+
+                </p>
+            </div>
+        </div>
+
+        <!-- Scheme 2 -->
+        <div class="scheme-card border-warning" id="scheme2">
+            <img src="images/scheme2.png" class="img-fluid" alt="Scheme 2 Image">
+            <div class="scheme-text">
+                <!-- <h5 class="card-title">Scheme 2</h5> -->
+                <p class="card-text">MSME Competitive (Lean) Scheme is a flagship initiative by the Government of India designed to enhance the competitiveness of Micro, Small, and Medium Enterprises (MSMEs). The primary goal of the scheme is to encourage MSMEs to adopt Lean Manufacturing practices to optimize their processes, reduce waste, improve productivity, and enhance overall business efficiency.</p>
+                
+            </div>
+        </div>
+
+        <!-- Scheme 3 -->
+        <div class="scheme-card border-warning" id="scheme2">
+            <!-- <img src="images/scheme2.png" class="img-fluid" alt="Scheme 2 Image"> -->
+            <div><br>
+                <h5 class="card-title" style="margin-left: 10px;"><strong> Key Features: </strong> </h5>
+                <p class="card-text">
+                    <ol style="margin: 15px;">
+                        <li>
+                            Lean Manufacturing Techniques: MSMEs are guided in the implementation of techniques such as 5S, Kaizen, Value Stream Mapping, Total Productive Maintenance (TPM), and Just-in-Time (JIT). These techniques help in optimizing production processes, minimizing wastage, and improving operational efficiency.
+                        </li><br>
+                        <li>
+
+                            Expert Guidance: Under the scheme, MSMEs receive technical and managerial support from qualified consultants who provide hands-on training and guidance. This includes assistance in identifying areas of improvement and executing lean methodologies.
+                        </li><br>
+                        <li>
+
+                            Cluster Approach: MSMEs are organized into groups or clusters to facilitate collective learning and cost-sharing for implementing lean practices. This approach also fosters collaboration and knowledge sharing among MSMEs in similar sectors or regions.
+                        </li><br>
+                        <li>
+
+                            Financial Support: The government provides financial assistance of up to 80% of the cost for lean manufacturing consultant fees, making it easier for MSMEs to adopt these practices without a significant financial burden.
+                        </li>
+
+                    </ol>
+                </p>
+                
+            </div>
+        </div>
+
+        <!-- Scheme 3 -->
+        <div class="scheme-card border-warning" id="scheme2">
+            <!-- <img src="images/scheme2.png" class="img-fluid" alt="Scheme 2 Image"> -->
+            <div><br>
+                <h5 class="card-title" style="margin-left: 10px;"><strong> Benefits for MSMEs: </strong> </h5>
+                <p class="card-text">
+                    <ul style="margin: 15px;">
+                        <li>
+                           <strong>
+                            Cost Reduction:
+                           </strong>  Lean practices focus on eliminating waste and optimizing resource utilization, leading to reduced production costs.
+                        </li>
+                        <li>
+                           <strong> Improved Quality: </strong> By refining processes, MSMEs can enhance the quality of their products, making them more competitive in both domestic and international markets.
+                        </li>
+                        <li>
+                           <strong> Increased Efficiency: </strong> Lean techniques help MSMEs streamline their operations, reducing delays, and increasing overall productivity.
+                        </li>
+                        <li>
+                           <strong> Sustainability: </strong> The focus on resource efficiency and waste minimization contributes to more sustainable manufacturing practices, aligning with global environmental standards.
+                        </li>
+
+                    </ul>
+                </p>
+                
+            </div>
+        </div>
+        
+        <!-- Scheme 3 -->
+        <div class="scheme-card border-warning" id="scheme2">
+            <!-- <img src="images/scheme2.png" class="img-fluid" alt="Scheme 2 Image"> -->
+            <div ><br>
+                <h5 class="card-title" style="margin-left: 10px;"><strong> Impact on MSMEs: </strong> </h5>
+                <p class="card-text" style="margin: 15px;">
+                    Adopting lean manufacturing through this scheme not only makes MSMEs more competitive but also positions them as reliable players in the supply chain, capable of delivering high-quality products on time. It improves their ability to meet international standards, opening doors to global markets and boosting their contribution to India's economic growth.
+                </p>
+                
+            </div>
+        </div>
+        
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // JavaScript function to highlight a scheme when clicked
+        function highlightScheme(schemeId) {
+            // Remove highlight from all scheme cards
+            document.querySelectorAll('.scheme-card').forEach(card => {
+                card.classList.remove('highlight');
+            });
+
+            // Add highlight to the clicked scheme
+            document.getElementById(schemeId).classList.add('highlight');
+        }
+    </script>
+
 </body>
+
 </html>
