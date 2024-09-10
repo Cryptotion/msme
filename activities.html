@@ -39,6 +39,36 @@
             order: 1;
             /* Image on right side for even cards */
         }
+
+
+        .card:nth-child(even) .img-col {
+            order: 1;
+            /* Show image on the left for even cards */
+        }
+
+        .card:nth-child(odd) .img-col {
+            order: -1;
+            /* Show image on the right for odd cards */
+        }
+
+        .card {
+            margin-bottom: 30px;
+            max-width: 900px;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        @media(min-width: 768px) {
+
+            /* Alternating styles for larger screens */
+            .card:nth-child(odd) .row {
+                flex-direction: row-reverse;
+                /* Image on right for odd cards */
+            }
+        }
     </style>
 </head>
 
@@ -92,7 +122,7 @@
     </header>
 
     <div class="accordion" id="accordionExample">
-        <!-- Card 1 -->
+        <!-- Card 1
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
@@ -110,6 +140,27 @@
                     entrepreneurs through incubators and accelerators.<br>
                     <strong>Technical Skill Enhancement:</strong> Offering technical training and certifications to
                     improve the skills of MSME employees.
+                </div>
+            </div>
+        </div> -->
+
+
+         <!-- Card 1: Image on Right (Odd Card) -->
+         <div class="card border-warning">
+            <div class="row g-0 align-items-center">
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Capacity Building and Skill Development</h5>
+                        <p class="card-text">E<strong>Training Programs:</strong> Organizing workshops and training sessions on various aspects of
+                            business management, marketing, and technology.<br>
+                            <strong>Entrepreneurship Development:</strong> Providing resources and mentorship for budding
+                            entrepreneurs through incubators and accelerators.<br>
+                            <strong>Technical Skill Enhancement:</strong> Offering technical training and certifications to
+                            improve the skills of MSME employees.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/capacity.png" class="img-fluid" alt="Mission Image">
                 </div>
             </div>
         </div>
